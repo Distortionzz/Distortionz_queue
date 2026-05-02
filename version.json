@@ -1,6 +1,6 @@
 {
-    "version": "1.1.0",
+    "version": "1.2.0",
     "name": "distortionz_queue",
-    "download": "https://github.com/Distortionzz/distortionz_queue",
-    "changelog": "Added premium adaptive card queue UI, animated status text, countdown, progress bar, rotating tips, optional logo image, staff/admin bypass, and GitHub version checking."
+    "download": "https://github.com/Distortionzz/Distortionz_queue",
+    "changelog": "v1.2.0 — Advanced adaptive card UI with stats grid (position, wait time, online count), action buttons (Discord, Rules, Website), branded header with logo support, fixed config-vs-checker key mismatch so version checks now run reliably."
 }

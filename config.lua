@@ -1,54 +1,79 @@
+-- =====================================================================
+--  Distortionz Queue · config.lua
+--  Premium timed connection queue for Distortionz RP
+-- =====================================================================
+
 Config = {}
 
+-- ─── Script meta ────────────────────────────────────────────────────
 Config.Script = {
-    name = 'Distortionz Queue',
-    version = '1.1.0'
+    name    = 'Distortionz Queue',
+    version = '1.2.0',
 }
 
+-- Convenient alias used by version_check.lua
+Config.CurrentVersion = Config.Script.version
+
+-- ─── Version checker ────────────────────────────────────────────────
 Config.VersionCheck = {
-    enabled = true,
-    resourceName = 'distortionz_queue',
-    currentVersion = '1.1.0',
-    githubVersionUrl = 'https://raw.githubusercontent.com/Distortionzz/distortionz_queue/main/version.json'
+    enabled      = true,
+    checkOnStart = true,
+    url          = 'https://raw.githubusercontent.com/Distortionzz/Distortionz_queue/main/version.json',
 }
 
+-- ─── Server branding ────────────────────────────────────────────────
+Config.Branding = {
+    serverName  = 'DistortinzRP',
+    tagline     = 'A premium FiveM roleplay experience',
+    logoUrl     = '',                                       -- direct image URL (96x96+ recommended)
+    fallbackIcon = '📦',                                    -- shown if logoUrl is empty
+    discord     = 'https://discord.gg/REPLACE_ME',
+    rules       = 'https://distortinzrp.com/rules',
+    website     = 'https://distortinzrp.com',
+}
+
+-- ─── Queue behavior ─────────────────────────────────────────────────
 Config.Queue = {
-    enabled = true,
+    enabled     = true,
+    waitSeconds = 10,                                       -- forced sync wait per player
+    queueMode   = 'Timed sync access',                      -- shown in footer
+}
 
-    -- Everyone waits this many seconds.
-    waitSeconds = 10,
+-- ─── Adaptive Card colors ───────────────────────────────────────────
+-- Valid values: default · dark · light · accent · good · warning · attention
+Config.Colors = {
+    accent     = 'good',
+    panelTitle = 'accent',
+    progress   = 'good',
+}
 
-    serverName = 'Distortionz RP',
-    serverSubtitle = 'Premium Connection Queue',
-
-    -- Optional direct image URL. Leave empty to use fallbackIcon.
-    logoUrl = '',
-    fallbackIcon = '📦',
-
-    -- Adaptive Card colors:
-    -- default, dark, light, accent, good, warning, attention
-    accentColor = 'good',
-    panelTitleColor = 'accent',
-
+-- ─── Copy / messages ────────────────────────────────────────────────
+Config.Text = {
     welcomeTitle = 'Preparing your connection...',
-    doneMessage = 'Connection approved. Loading into the city...',
+    doneMessage  = 'Connection approved. Loading into the city...',
+    footer       = 'Please wait while we prepare your session.',
+}
 
-    statusMessages = {
-        'Syncing identity',
-        'Validating connection',
-        'Preparing session',
-        'Contacting city services',
-        'Checking queue clearance',
-        'Finalizing entry approval'
-    },
+-- ─── Rotating status (cycles every second of the wait) ──────────────
+Config.StatusMessages = {
+    'Syncing identity',
+    'Validating connection',
+    'Preparing session',
+    'Contacting city services',
+    'Checking queue clearance',
+    'Finalizing entry approval',
+}
 
-    tips = {
-        'Tip: Respect roleplay scenes and give others time to respond.',
-        'Tip: Use /me and /do to add detail to your roleplay.',
-        'Tip: Report bugs to staff so the city can keep improving.',
-        'Tip: Keep your character story consistent and believable.',
-        'Tip: Drive carefully near busy areas and active scenes.'
-    },
-
-    footer = 'Please wait while we prepare your session.'
+-- ─── Rotating tips (one shown per second of the wait) ───────────────
+Config.Tips = {
+    'Drive carefully near busy areas and active scenes.',
+    'Use /report to get help from staff.',
+    'Always identify your character before initiating RP.',
+    'Read the rules before causing conflict.',
+    'Have your hands ready in serious situations.',
+    'Need help? Open a ticket in our Discord.',
+    'Value your life — every character only has one.',
+    'Power-gaming and meta-gaming are not tolerated.',
+    'Use /me and /do to add detail to your roleplay.',
+    'Report bugs to staff so the city can keep improving.',
 }
