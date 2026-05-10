@@ -1,6 +1,12 @@
-# 🚦 Distortionz Queue
+# Distortionz Queue
 
-**Premium timed connection queue for FiveM / Qbox.**
+> Premium timed connection queue for Qbox/FiveM — advanced adaptive card UI, animated countdown, server stats, action buttons, rotating tips.
+
+![FiveM](https://img.shields.io/badge/FiveM-cerulean-yellow?style=flat-square&labelColor=181b20)
+![Qbox](https://img.shields.io/badge/Qbox-required-red?style=flat-square&labelColor=dfb317)
+![License](https://img.shields.io/badge/License-MIT-brightgreen?style=flat-square)
+![Version](https://img.shields.io/github/v/release/Distortionzz/Distortionz_queue?style=flat-square&color=d4aa62&label=version)
+
 Gives every connecting player a short forced wait before entering the server, helping the server finish syncing resources and player data while showing a fully branded, advanced Adaptive Card connection screen.
 
 ---

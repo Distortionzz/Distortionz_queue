@@ -1,6 +1,6 @@
 {
-    "version": "1.2.0",
+    "version": "1.2.1",
     "name": "distortionz_queue",
     "download": "https://github.com/Distortionzz/Distortionz_queue",
-    "changelog": "v1.2.0 — Advanced adaptive card UI with stats grid (position, wait time, online count), action buttons (Discord, Rules, Website), branded header with logo support, fixed config-vs-checker key mismatch so version checks now run reliably."
+    "changelog": "v1.2.1 — Standardized README badge block to the new flat-square format with dynamic version pull from GitHub releases. v1.2.0 — Advanced adaptive card UI with stats grid (position, wait time, online count), action buttons (Discord, Rules, Website), branded header with logo support, fixed config-vs-checker key mismatch so version checks now run reliably."
 }

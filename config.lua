@@ -8,7 +8,7 @@ Config = {}
 -- ─── Script meta ────────────────────────────────────────────────────
 Config.Script = {
     name    = 'Distortionz Queue',
-    version = '1.2.0',
+    version = '1.2.1',
 }
 
 -- Convenient alias used by version_check.lua
@@ -23,13 +23,13 @@ Config.VersionCheck = {
 
 -- ─── Server branding ────────────────────────────────────────────────
 Config.Branding = {
-    serverName  = 'DistortinzRP',
+    serverName  = 'DistortionzRP',
     tagline     = 'A premium FiveM roleplay experience',
     logoUrl     = '',                                       -- direct image URL (96x96+ recommended)
     fallbackIcon = '📦',                                    -- shown if logoUrl is empty
     discord     = 'https://discord.gg/REPLACE_ME',
-    rules       = 'https://distortinzrp.com/rules',
-    website     = 'https://distortinzrp.com',
+    rules       = 'https://Distortionzrp.com/rules',
+    website     = 'https://Distortionzrp.com',
 }
 
 -- ─── Queue behavior ─────────────────────────────────────────────────
