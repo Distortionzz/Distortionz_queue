@@ -1,6 +1,6 @@
 {
-    "version": "1.2.1",
+    "version": "1.3.0",
     "name": "distortionz_queue",
     "download": "https://github.com/Distortionzz/Distortionz_queue",
-    "changelog": "v1.2.1 — Standardized README badge block to the new flat-square format with dynamic version pull from GitHub releases. v1.2.0 — Advanced adaptive card UI with stats grid (position, wait time, online count), action buttons (Discord, Rules, Website), branded header with logo support, fixed config-vs-checker key mismatch so version checks now run reliably."
+    "changelog": "v1.3.0 — Major rebrand & restyle to a polished live dashboard card: real connection position + concurrent sync count (replaces the fixed #1), server capacity bar, and live slots-free / uptime / server-clock tiles. Added multi-phase sync flow (Authenticating -> Syncing -> Finalizing) with phase pips, an end-of-sync summary card, cosmetic maintenance mode, and expanded status/tip pools. Every connection still serves the full 10s sync wait with no role or priority bypass. v1.2.1 — Standardized README badge block to the new flat-square format with dynamic version pull from GitHub releases. v1.2.0 — Advanced adaptive card UI with stats grid, action buttons, branded header with logo support, fixed config-vs-checker key mismatch."
 }
